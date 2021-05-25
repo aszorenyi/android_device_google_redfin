@@ -26,6 +26,9 @@ $(call inherit-product, device/google/redfin/aosp_redfin.mk)
 
 -include device/google/redfin/device-lineage.mk
 
+# Include GApps
+$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := havoc_redfin
 PRODUCT_BRAND := google
