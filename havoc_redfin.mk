@@ -18,8 +18,8 @@
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Havoc-OS stuff.
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/redfin/aosp_redfin.mk)
@@ -27,7 +27,7 @@ $(call inherit-product, device/google/redfin/aosp_redfin.mk)
 -include device/google/redfin/device-lineage.mk
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_redfin
+PRODUCT_NAME := havoc_redfin
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 5
 TARGET_MANUFACTURER := Google
