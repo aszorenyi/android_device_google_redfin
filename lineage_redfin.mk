@@ -12,6 +12,15 @@ $(call inherit-product, device/google/redfin/aosp_redfin.mk)
 
 include device/google/redfin/device-lineage.mk
 
+# Include GApps
+WITH_GMS := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_CALL_RECORDING := true
+$(call inherit-product-if-exists, vendor/gapps/config.mk)
+
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 5
