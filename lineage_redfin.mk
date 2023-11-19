@@ -25,9 +25,6 @@ $(call inherit-product-if-exists, vendor/gms/products/board.mk)
 $(call inherit-product-if-exists, vendor/gms/products/fonts.mk)
 $(call inherit-product-if-exists, vendor/gms/products/gms.mk)
 
-# Enable Blur
-TARGET_ENABLE_BLUR := true
-
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 5
